@@ -8,9 +8,9 @@ interface LayoutI {
 
 function Layout({ children }: LayoutI) {
   return (
-    <div >
+    <div className="position-relative">
       <Header />
-      <main>{children}</main>
+      <main className="min-vh-100">{children}</main>
       <Footer/>
     </div>
   );
